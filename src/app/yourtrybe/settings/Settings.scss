@@ -1,0 +1,113 @@
+.ui.grid.settings{
+  .menu .ui.vertical.menu{
+    a.active.item{
+      color: var(--text-color)!important;
+    }
+    a.item{
+      color: var(--title-dark);
+    }
+  }
+
+  .ui.vertical.menu .item {
+    svg,i {
+      margin: 0 5px;
+    }
+  }
+  .ui.form {
+    .message {
+      background: var(--red) !important;
+      .header, p {
+        color: #fff !important
+      }
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    margin: 0 auto;
+    .field {
+      .ui.input {
+        width: 100%;
+        input {
+          background: transparent;
+          color: var(--green);
+          border-color: var(--icon-secondary);
+          &:focus {
+            border-color: var(--green)
+          }
+        }
+      }
+      label {
+        color: var(--text-color);
+      }
+      textarea {
+        background: transparent;
+        color: var(--text-color);
+        border-color: var(--icon-secondary);
+        &:focus {
+          border-color: var(--green)
+        }
+      }
+    }
+    .field.error {
+      .ui.input {
+        width: 100%;
+        input {
+          background: transparent;
+          color: var(--green);
+          border-color: var(--red);
+          &:focus {
+            border-color: var(--green)
+          }
+        }
+      }
+    }
+  }
+  .ui.form.terra-account .field{
+    >div{
+      display:flex;
+      flex-flow: column;
+      >span{
+        margin: $padding/2 0;
+      }
+      span.account-name{
+        color: var(--pink) !important;
+        font-weight: bolder !important;
+      }
+    }
+
+  }
+  .account-name{
+    font-size: 18px;
+    color: var(--pink) !important;
+    margin-top: 20px !important;
+    font-weight: bolder !important;
+  }
+}
+.ui.grid.settings.cz-settings .sixteen.wide.column.menu .ui.inverted.vertical.menu img.ui.image {
+  margin-right: 5px;
+}
+
+.ui.grid.settings.cz-settings .sixteen.wide.column.menu .ui.inverted.vertical.menu a.active.item img.ui.image {
+  display: none;
+}
+
+.ui.grid.settings.cz-settings .sixteen.wide.column.menu .ui.inverted.vertical.menu a.active.item img.ui.image.cz-publish-filter-icon {
+  display: block;
+}
+.settings.cz-settings h4 {
+  display: none;
+}
+.ui.grid.settings .ui.form {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+.ui.grid.settings.cz-settings .field.cz-form-setting + button {
+  background: #c83e93;
+  border: none !important;
+  color: #000 !important;
+  margin-bottom: 30px;
+  float: right;
+}

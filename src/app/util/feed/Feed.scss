@@ -1,0 +1,38 @@
+.ui .container .feed {
+  @media #{$for-phone-only} {
+    padding: 0!important;
+  }
+  .sixteen.wide.column{
+    .ui.container{
+      @media #{$for-phone-only} {
+        padding: 0!important;
+      }
+    }
+  }
+  &-settings {
+    height: 10vh;
+  }
+  .posts-list {}
+}
+@keyframes placeHolderShimmer{
+  0%{
+      background-position: -468px 0
+  }
+  100%{
+      background-position: 468px 0
+  }
+}
+.animated-background {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: var(--background-light);
+  background: linear-gradient(to right, var(--loader-light) 8%, var(--background-light) 18%, var(--background-light) 33%);
+  background-size: 800px 104px;
+  height: 275px;
+  position: relative;
+  border-radius: 8px;
+  margin-top: 20px
+}

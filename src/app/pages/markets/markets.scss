@@ -1,0 +1,15 @@
+.btn.addTokenBtn{
+  background: linear-gradient(90.24deg, #FA2CAB -1.6%, #9B69FC 99.79%), #FA2CAB;
+  border-radius: 5px !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  width: 100px;
+  height: 35px;
+  padding: 5px 15px !important;
+  border: 0;
+  &:hover {
+    background: #FA2CAB;
+  }
+}  

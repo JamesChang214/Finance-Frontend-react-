@@ -1,0 +1,54 @@
+.ui.comments {
+  max-width: 100%;
+  .comment-lvl {
+    @for $i from 1 through 7 {
+      &-#{$i} {
+        width: 100% - $i*5%;
+        margin-left: 0% + $i*5%;
+      }
+    }
+  }
+  .comment {
+    border-radius: 6px;
+    background: var(--background-light);
+    padding: 20px !important;
+    .avatar {
+      margin: 0.5em !important;
+      cursor: pointer;
+      img {
+        border-radius: 100%;
+      }
+    }
+    .content {
+      padding: .5em 0;
+      .author {
+        cursor: pointer;
+        color: var(--text-color);
+        &:hover {
+          color: var(--green);
+        }
+      }
+      .text {
+        color: var(--text-color);
+        font-size: 1.15em;
+      }
+      .metadata {
+        color: var(--text-color);
+        margin-left: 0;
+        display: block;
+      }
+      .actions {
+        color: var(--green);
+        a {
+          color: var(--green);
+        }
+        a:hover {
+          opacity: 0.8;
+        }
+      }
+      .form {
+        margin-right: 3.5em;
+      }
+    }
+  }
+}

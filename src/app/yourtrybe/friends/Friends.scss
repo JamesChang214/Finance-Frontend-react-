@@ -1,0 +1,31 @@
+.text.menu {
+  a {
+    i {
+      margin: 0 .35714286em 0 0;
+    }
+  }
+}
+
+.following-content {
+  .following-wrapper {
+    .list .item {
+      .unfriend {
+        background: var(--green) !important;
+      }
+      .cancel-request {
+        background: var(--red) !important;
+      }
+      a {
+        &:hover {
+          color: var(--green) !important
+        }
+      }
+      .content .header, a.description {
+        color: var(--text-color)!important;
+        a{
+          color: var(--text-color)!important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.alignmentTool {
+  left: 50%;
+  transform: translate(-50%) scale(0);
+  position: absolute;
+  border: 1px solid #939399;
+  background: rgb(48, 48, 60);
+  border-radius: 4px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.alignmentTool:after,
+.alignmentTool:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.alignmentTool:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: rgb(48, 48, 60);
+  border-width: 4px;
+  margin-left: -4px;
+}
+
+.alignmentTool:before {
+  border-color: rgba(221, 221, 221, 0);
+  border-top-color: #939399;
+  border-width: 6px;
+  margin-left: -6px;
+}

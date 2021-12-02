@@ -1,0 +1,104 @@
+.app {
+  .ui.green.button, .ui.green.buttons .button{
+    background-color: var(--green);
+    color: #fff;
+  }
+  
+  .ui.green.button, .ui.green.buttons .button:hover {
+    background-color: #7cb7aa  !important;
+  }
+
+  .ui.green.active.button, .ui.green.button .active.button:active, .ui.green.buttons .active.button, .ui.green.buttons .active.button:active {
+    background-color: #368f7c;
+  }
+
+  .wallet-menu-container {
+    background-color: var(--page-back);
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .tr-sidebar-toggle {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    padding: 10px;
+    display: none;
+    margin: 0;
+    i {
+      font-size: 14px;
+      margin: 0 !important;
+    }
+  }
+  
+  .ui.vertical.vertical-wallet-menu.menu {
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-shadow: none;
+    padding: 68px 15px 15px 60px;
+    background-color: var(--page-back) !important;
+  
+    .tr-sidebar-toggle {
+      top: 20px;
+    }
+
+    .item {
+      padding: 0;
+      text-align: left;
+      margin-bottom: 20px;
+
+      &:before {
+        display: none;
+      }
+  
+      &.account {
+        margin-bottom: 40px;
+      }
+  
+      a {
+        opacity: 0.8;
+        color: var(--text-color);
+        display: inline-block;
+        font-family: 'Inter UI', sans-serif;
+        font-weight: 400;
+  
+        &.active {
+          opacity: 1;
+          font-weight: bold;
+          color: var(--green);
+        }
+      }
+    }
+  }
+}
+
+.three.wide.column.wallet-menu-container {
+  width: 300px;
+  text-align: center !important;
+}
+
+.ui.column.grid>[class*="thirteen wide"].column, .ui.grid>.column.row>[class*="thirteen wide"].column, .ui.grid>.row>[class*="thirteen wide"].column, .ui.grid>[class*="thirteen wide"].column {
+  width: 70%!important;
+}
+
+@media screen and (max-width: 1024px) {
+  .app {
+    .tr-sidebar-toggle {
+      display: block;
+    }
+
+    .three.wide.column.wallet-menu-container {
+      width: 100%;
+      background-color: var(--dark);
+    }
+
+    .ui.vertical.vertical-wallet-menu.menu {
+      height: auto;
+      z-index: 999999;
+      padding: 25px 15px 15px 20px;
+      background-color: var(--dark) !important;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+a.navbar-brand.fw-bold.cz-sidebar-logo {
+  margin-top: 130px;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+
+a.navbar-brand.fw-bold.cz-sidebar-logo img {
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+}
+header .ui.container {
+  max-width: 100% !important;
+}
+
+header .ui.container .container {
+  max-width: 100%;
+}
+
+header .ui.container .container a.navbar-brand.fw-bold {
+  width: 210px;
+  text-align: center;
+}
+
+header .ui.container .container .ui.grid.user-area {
+  width: 230px;
+  justify-content: end;
+}
+.side-control {
+  padding-left: 5rem;
+  a {
+    -webkit-transition: opacity .1s ease, background-color .1s ease, color .1s ease, box-shadow .1s ease, background .1s ease;
+    transition: opacity .1s ease, background-color .1s ease, color .1s ease, box-shadow .1s ease, background .1s ease;
+    color: var(--title-dark);
+    font-size: 1em;
+    width: 100%;
+    @media (max-width: 767px) {
+      font-size: 1.65em;
+    }
+    i,
+    svg {
+      width: 1.2em !important;
+      text-align: center;
+    }
+    &:hover {
+      color: var(--text-color);
+    }
+    &.selected {
+      color: var(--text-color);
+    }
+  }
+}
+.sidebarLogo{
+    margin: auto;
+    margin-bottom: 25px;
+    width:90px;
+}

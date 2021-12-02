@@ -1,0 +1,109 @@
+.green-button {
+  background-color: var(--green) !important;
+  border: 1px solid var(--green);
+  color: var(--back-color) !important;
+  border-radius: 6px;
+  width: auto;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    color: var(--text-color) !important;
+    transition: all 200ms ease-in-out;
+  }
+}
+.green-follow-button {
+  background-color: var(--green) !important;
+  border: 1px solid var(--green);
+  color: var(--text-color) !important;
+  border-radius: 6px;
+  width: auto;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    background-color: var(--red) !important;
+    color: var(--text-color) !important;
+    transition: all 200ms ease-in-out;
+  }
+  &:hover span {display:none}
+  &:hover:before {
+    content:"Unfollow";
+  }
+
+}
+.green-bordered-button,
+.ui.button.green-bordered-button {
+  background-color: transparent;
+  border: 1px solid var(--green);
+  color: var(--green) !important;
+  border-radius: 6px;
+  width: auto;
+  // text-transform: uppercase;
+  &:hover {
+    background-color: var(--green);
+    color: var(--page-back) !important;
+  }
+}
+.greenButton,
+.ui.button.greenButton {
+  background-color: transparent;
+  border: 1px solid var(--green);
+  color: var(--green) !important;
+  border-radius: 6px;
+  width: auto;
+  // text-transform: uppercase;
+  &:hover {
+    background-color: var(--green);
+    color: var(--page-back) !important;
+  }
+}
+
+.gray-rounded-button,
+.ui.button.gray-rounded-button {
+  background-color: var(--page-back);
+  color: var(--icon-secondary);
+  border-radius: $padding*2;
+}
+
+/* ==  card content borders === */
+.ui.card .content {
+  border: none;
+}
+
+/* ======  Custom checkbox =========*/
+
+.ui.checkbox input:checked:focus~.box:before,
+.ui.checkbox input:checked:focus~label:before {
+  background: transparent;
+  border-color: var(--green);
+}
+
+.ui.checkbox input:checked~.box:before,
+.ui.checkbox input:checked~label:before {
+  background: transparent;
+  border-color: var(--green);
+}
+
+.ui.checkbox input:focus~.box:before,
+.ui.checkbox input:focus~label:before {
+  background: transparent;
+  border-color: var(--green);
+}
+
+.ui.checkbox .box:hover::before,
+.ui.checkbox label:hover::before {
+  background: transparent;
+  border-color: var(--green);
+}
+
+.ui.checkbox .box:before,
+.ui.checkbox label:before {
+  background: transparent;
+  border-color: var(--green);
+}
+
+.ui.checkbox input:checked~.box:after,
+.ui.checkbox input:checked~label:after {
+  color: var(--green) !important;
+}
+
+/* =========================== */

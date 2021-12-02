@@ -1,0 +1,83 @@
+.ui.modal {
+  top: 5% !important;
+  border-radius: 0 0 0.5rem 0.5rem !important;
+  background: #1B1B1B !important;
+  height: auto;
+}
+
+.ui.modal>.header {
+  background-color: var(--pink) !important;
+  color: #fff !important;
+}
+
+.ui.modal>.content {
+  background: #1B1B1B !important;
+  color: var(--green);
+  .input-label {
+    color: #fff !important;
+    font-weight: normal;
+  }
+  .login-input {
+    color: #fff;
+    background: transparent;
+    border: 1px solid var(--text-secondary);
+  }
+  .login-input:focus {
+    color: #fff;
+    background: transparent;
+    border: 1px solid var(--pink);
+  }
+  .ui.form{
+    button.ui.button.forgot-password{
+      margin-bottom: $padding;
+    }
+  }
+}
+
+.ui.modal>.actions {
+  background: #1B1B1B !important;
+  display: inline-flex;
+  float: right;
+  .cancel-button {
+    background: transparent;
+    color: var(--text-color);
+  }
+  .cancel-button:hover {
+    color: var(--green);
+  }
+  .submit-button {
+    background: transparent;
+    border: 1px solid var(--pink) !important;
+    color: var(--pink) !important;
+  }
+  .submit-button:hover {
+    color: var(--header-back) !important;
+    background: var(--pink) !important;
+  }
+}
+@keyframes pop-swirl {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.mini, .loopsignup{-webkit-animation: pop-swirl 1s ease forwards; /*trigger the keyframe*/}
+.loginModalHeader{
+  display: inline-flex !important;
+  width: 100%;
+  padding-right: 1.25rem !important;
+}
+.loginModalHeader>p{
+  width: 90%;
+  height: 32px;
+  margin-bottom: 0;
+  font-size: 18px;
+  padding-top: 3px;
+}
+.loginCloseBtn{
+  height: 32px !important;
+  width: 36px !important;
+  padding: 0 !important;
+}

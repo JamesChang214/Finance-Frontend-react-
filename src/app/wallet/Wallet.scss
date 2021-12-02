@@ -1,0 +1,22 @@
+.wallet-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.wallet-main-view {
+  width: calc(100% - 300px);
+  background-color: var(--message-summary-header);
+}
+
+.mobile-wallet-menu {
+  background-color: var(--background-dark) !important;
+  a {
+    color: var(--text-color) !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wallet-main-view {
+    width: 100%;
+  }
+}

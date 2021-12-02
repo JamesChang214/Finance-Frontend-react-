@@ -1,0 +1,52 @@
+.footer-wrapper {
+  footer {
+    //border-top: 1px solid #e5e7ea;
+    //padding-top: 21px;
+    padding-bottom: 10px;
+    h4 {
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 600;
+      color: #2c2c38;
+      margin-bottom: 12px;
+    }
+
+    .ui.list {
+      margin-bottom: 36px;
+    }
+
+    .ui.list .list>a.item,
+    .ui.list>a.item {
+      font-size: 13px;
+      color: #4dd4b6;
+      line-height: 1.54;
+      font-weight: 500;
+    }
+
+    button {
+      padding: 10px !important;
+      margin: 5px !important;
+      .svg-inline--fa {
+        font-size: 1.7em;
+      }
+    }
+
+    .telegram {
+      color: white !important;
+      background: #0088cc !important;
+    }
+
+    .discord {
+      color: white !important;
+      background: #7289da !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-wrapper footer {
+    .ui.list {
+      margin-bottom: 10px;
+    }
+  }
+}

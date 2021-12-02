@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>eos_lynx_wallet_logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,0 C4.925,0 0,4.925 0,11 C0,17.075 4.925,22 11,22 C17.075,22 22,17.075 22,11 C22,4.925 17.075,0 11,0 Z" id="path-1"></path>
+        <linearGradient x1="101.999998%" y1="0%" x2="0%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#804699" offset="0%"></stop>
+            <stop stop-color="#AE3164" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets" transform="translate(-511.000000, -532.000000)">
+            <rect fill="none" x="0" y="0" width="1440" height="1800"></rect>
+            <g id="eos_lynx_wallet_logo" transform="translate(511.000000, 532.000000)">
+                <g id="Group-6">
+                    <g id="Group-3">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M11,0 C4.925,0 0,4.925 0,11 C0,17.075 4.925,22 11,22 C17.075,22 22,17.075 22,11 C22,4.925 17.075,0 11,0 Z" id="Fill-1" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M11.7,16.5401 L14.722,7.0891 L16.224,13.6971 L11.7,16.5401 Z M7.231,7.0961 L10.317,16.5711 L5.774,13.6961 L7.231,7.0961 Z M10.981,10.2131 C11.09,10.2131 11.193,10.1671 11.266,10.0871 L13.882,7.1911 L11.003,16.1951 L8.071,7.1951 L10.696,10.0871 C10.769,10.1681 10.872,10.2131 10.981,10.2131 Z M17.034,13.7921 L15.157,5.5371 C15.125,5.3971 15.018,5.2861 14.879,5.2501 C14.741,5.2141 14.593,5.2581 14.497,5.3641 L10.98,9.2571 L7.448,5.3641 C7.351,5.2581 7.203,5.2141 7.064,5.2511 C6.925,5.2881 6.819,5.3981 6.787,5.5391 L4.965,13.7941 C4.93,13.9521 4.998,14.1151 5.135,14.2021 L10.775,17.7701 C10.838,17.8111 10.909,17.8301 10.981,17.8301 C11.052,17.8301 11.123,17.8111 11.185,17.7711 L16.864,14.2021 C17.002,14.1161 17.071,13.9511 17.034,13.7921 Z" id="Fill-4" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

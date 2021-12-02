@@ -1,0 +1,38 @@
+.ui.secondary.inverted.pointing.menu .active.item {
+  border-bottom-color: var(--green);
+  color: var(--green) !important;
+}
+
+.datapoint {
+  .icon {
+    height: 2em;
+  }
+  .label {
+    font-size: 10px;
+  }
+  .value {
+    font-size: 10px;
+  }
+}
+
+.leaderboard-bloks-logo {
+  height: 2em;
+  width: 2em;
+}
+
+.leaderboard-bloks-link {
+  color: var(--green);
+}
+
+.mypre-net-icon {
+  height: 3em;
+}
+
+.mypre-trybe-icon {
+  height: 3em;
+}
+
+.top-presale-message {
+  font-size: 1.2em !important;
+  color: var(--green);
+}

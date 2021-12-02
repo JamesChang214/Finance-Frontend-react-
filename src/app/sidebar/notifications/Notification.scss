@@ -1,0 +1,51 @@
+.ui.inverted.segment.notifications-list{
+  .ui.feed{
+    .event{
+      .label{
+        display: flex;
+        align-items: center;
+      }
+      .content{
+        color: var(--text-color);
+        .summary{
+          color: var(--icon-light);
+          font-weight: 400;
+          .user{
+            color: var(--icon-light);
+          }
+          .date{
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.realtime-notification-wrapper{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  .notification-wrapper{
+    width: $notification-width;
+    min-width: 300px;
+    height: $notification-height;
+    padding: $padding/2;
+    .ui.feed{
+      height: 80%;
+      background-color: var(--title-dark);
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
+      .close{
+        background-color: transparent;
+      }
+      .event{
+        padding: $padding/4;
+        font-size: $padding*0.9;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+$padding: 1rem;
+$margin: 1rem;
+
+.meta-data {
+  font-size: 16px;
+  &-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    color: var(--green);
+    margin-bottom: $margin*1.5;
+    &-text {
+      font-weight: 500;
+      margin-left: $margin;
+      margin-top: $margin/16;
+    }
+    .ui.checkbox label:before {
+      border: 2px solid var(--green);
+    }
+  }
+}

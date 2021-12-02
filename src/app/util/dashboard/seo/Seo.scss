@@ -1,0 +1,83 @@
+$padding: 1rem;
+$margin: 1rem;
+
+.seo {
+  font-size: 16px;
+  padding-left: 10rem !important;
+  width: 100%;
+  &-search {
+    display: flex;
+    align-items: center;
+    margin: 0 0 $margin $margin;
+    background: var(--background-dark);
+    height: 3.6rem;
+    width: 23vw;
+    border-radius: 1.8rem;
+    &-icon {
+      color: var(--icon-secondary);
+      margin: $margin/3 0 0 $margin*1.5;
+    }
+    .ui.input input {
+      font-size: 18px;
+      width: 19vw;
+      background: transparent;
+      color: var(--icon-light);
+      border: none;
+    }
+  }
+  &-title-suggested,
+  &-title-choosen {
+    font-weight: 500;
+  }
+  &-keywords-containers {
+    &-suggested, &-choosen {
+      background: var(--header-back);
+      padding: $padding*1.5 !important;
+      height: 62vh;
+      overflow-y: auto;
+      border-radius: 8px;
+      .suggested-keyword {
+        cursor: pointer;
+        margin-bottom: $margin*1.5;
+      }
+      .suggested-keyword:last-child {
+        margin-bottom: 0;
+      }
+      .current-keyword {
+        color: var(--green);
+        font-weight: 500;
+      }
+      .deleted-keyword {
+        color: var(--text-secondary);
+        font-weight: 600;
+        cursor: default;
+      }
+      .choosen-keyword {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        margin-bottom: $margin*1.5;
+        &-trash {
+          color: var(--text-secondary);
+          cursor: pointer;
+        }
+      }
+      .choosen-keyword:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-arrow {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    &-button {
+      margin: 0 !important;
+      border: 1px solid var(--green) !important;
+      color: var(--green) !important;
+      background-color: transparent !important;
+      width: 6vh;
+      height: 6vh;
+    }
+  }
+}

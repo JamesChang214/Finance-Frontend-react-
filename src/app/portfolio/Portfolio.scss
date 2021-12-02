@@ -1,0 +1,31 @@
+@import 'components/Chart/Chart';
+@import 'components/ChartButtons/ChartButtons';
+@import "components/Preloader/Preloader";
+
+.portfolio {
+  &-container {
+    width: 100%;
+    margin: auto;
+    .head-text {
+      color: #4dd4b6;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+  &-table {
+    background-color: var(--back-color) !important;
+    color: var(--text-color) !important;
+
+    th {
+      color: var(--title-dark) !important;
+      background-color: var(--back-color) !important;
+    }
+  }
+  &-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

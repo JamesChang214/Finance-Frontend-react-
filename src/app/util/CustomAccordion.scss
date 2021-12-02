@@ -1,0 +1,86 @@
+.accordion-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-back);
+  border-radius: 8px;
+  z-index: 0;
+  .accordion-text {
+    color: var(--icon-light);
+    font-weight: 500;
+    display: flex;
+  }
+  .accordion-checkbox {
+    z-index: 5;
+    height: 0;
+  }
+}
+
+.bm-menu-wrap {
+  background-color: var(--back-color) !important;
+}
+
+.level-1 {
+  width: calc(100% - 2.5rem);
+  margin-left: $margin*2.5;
+  width: calc(100% - 1.5rem);
+  margin-left: $margin*1.5;
+}
+
+.level-2 {
+  width: calc(100% - 3rem);
+  margin-left: $margin*3;
+}
+
+.level-3 {
+  width: calc(100% - 4.5rem);
+  margin-left: $margin*4.5;
+}
+
+.level-4 {
+  width: calc(100% - 6rem);
+  margin-left: $margin*6;
+}
+
+.level-5 {
+  width: calc(100% - 7.5rem);
+  margin-left: $margin*7.5;
+}
+
+.level-6 {
+  width: calc(100% - 9rem);
+  margin-left: $margin*9;
+}
+
+.level-7 {
+  width: calc(100% - 10.5rem);
+  margin-left: $margin*10.5;
+}
+
+.ui.accordion .title:not(.ui) {
+  font-family: 'Inter UI', sans-serif;
+  padding: $padding $padding*1.2 $padding $padding;
+  margin-bottom: 4px;
+}
+
+.ui.accordion .title .dropdown.icon {
+  font-size: 1.3em;
+}
+
+.ui.accordion:not(.styled) .title~.content:not(.ui) {
+  padding: 0;
+}
+.post-categories-n-tags .ui.checkbox.accordion-checkbox {
+  width: 100%;
+}
+
+.post-categories-n-tags .ui.checkbox.accordion-checkbox label {
+  padding-left: 0;
+  color: white;
+}
+
+.post-categories-n-tags .ui.checkbox.accordion-checkbox label:before, .post-categories-n-tags .ui.checkbox.accordion-checkbox label:after {
+  right: 0;
+  left: auto;
+  border: 1px solid white !important;
+}

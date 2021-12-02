@@ -1,0 +1,35 @@
+.airdrop-button-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+  z-index: 99999 !important;
+  border-top: solid 2px var(--background-light);
+
+  &__button {
+    cursor: pointer;
+    width: 100% !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 15px 10px;
+    border-radius: 8px;
+    background-color: rgb(96, 38, 252) !important;
+    color: #fff !important;
+  }
+  &__modal{
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+  }
+  &__container-form {
+    margin-top: 20px;
+    padding: 10px 20px;
+    label {
+      color: var(--text-color) !important;
+    }
+    &__label {
+      color: var(--text-color);
+    }
+  }
+}

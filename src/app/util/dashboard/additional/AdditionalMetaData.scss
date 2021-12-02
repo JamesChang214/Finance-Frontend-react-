@@ -1,0 +1,191 @@
+$padding: 1rem;
+$margin: 1rem;
+.meta-data-segment-wrapper {
+  margin-top: $margin*7;
+  .meta-data-segment {
+    background-color: var(--header-back) !important;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: $padding*1.5 !important;
+    // height: 160px; 
+    margin-bottom: $margin*1.5;
+    &-title-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-title {
+      display: flex;
+      flex-direction: row;
+      color: var(--green);
+      align-items: center;
+      font-weight: 500;
+      padding: 20px;
+      margin-bottom: $margin*2;
+      &-text {
+        margin-left: $margin;
+      }
+    }
+    .add-button {
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-weight: normal;
+      background-color: transparent;
+      width: 7vh;
+      height: 3vh;
+      padding: 0;
+      margin: 0;
+    }
+    &-featured-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .upload-featured-image {
+        margin-top: $margin;
+        color: var(--icon-secondary);
+      }
+      .upload-text-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-direction: row;
+        width: 100%;
+        margin: $margin 0 $margin*2 0;
+        .upload-text {
+          color: var(--icon-secondary);
+          font-size: 12px;
+          margin-bottom: 0;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .upload-link {
+          position: relative;
+          overflow: hidden;
+          font-size: 12px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .upload-link>button {
+          background: transparent;
+          border: none;
+          color: var(--green);
+          padding: 0;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .upload-link input[type=file] {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+      }
+    }
+    .featured-image-preview {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+    &-experience-level {
+      display: flex;
+      justify-content: space-between;
+      .level-button {
+        border: 1px solid var(--icon-secondary);
+        color: var(--icon-secondary);
+        font-weight: normal;
+        background-color: transparent;
+        width: 13vh;
+        padding: $padding/1.8 0 $padding/1.8 0;
+      }
+      .current-level-button {
+        border: 1px solid var(--green);
+        color: var(--green);
+      }
+    }
+    &-series {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: $margin/2;
+      &-text {
+        margin-bottom: 0;
+      }
+    }
+    &-series:last-child {
+      margin-bottom: 0;
+    }
+    &-input-tag {
+      width: 100%;
+      margin-bottom: $margin*1.5;
+    }
+    .ui.input input {
+      background: var(--back-color);
+      color: var(--icon-light);
+      border: none;
+    }
+    .ui.input input:focus,
+    .ui.input.focus input {
+      border: none;
+    }
+    &-tag-label-button {
+      display: flex;
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-weight: normal;
+      background-color: transparent;
+      // height: 3vh;
+      // padding: 0 $padding/2 0 $padding/2;
+      height: 6vh;
+      padding: 2px 1.5rem 2px 1.5rem;
+      margin: 0;
+      &-close {
+        margin-left: $margin/1.2;
+      }
+    }
+    &-toggle-wrapper {
+      display: flex;
+      flex-direction: column;
+      .toggle-group {
+        width: 8rem;
+        &-toggle {
+          color: var(--icon-secondary);
+          background-color: transparent;
+          border: 1px solid var(--icon-secondary) !important;
+          font-weight: normal;
+          padding: $padding/1.5 0;
+        }
+        .left {
+          border-right: none !important;
+        }
+        .right {
+          border-left: none !important;
+        }
+        &-toggle:hover {
+          color: var(--icon-secondary);
+          background-color: transparent;
+        }
+        &-toggle:focus {
+          color: var(--green);
+          background-color: transparent;
+        }
+        &-toggle-current {
+          color: var(--green);
+          border: 1px solid var(--green) !important;
+        }
+        .current-left {
+          border-right: 1px solid var(--green) !important;
+        }
+        .current-right {
+          border-left: 1px solid var(--green) !important;
+        }
+      }
+      .input-url {
+        margin-top: $margin*2;
+      }
+    }
+  }
+}

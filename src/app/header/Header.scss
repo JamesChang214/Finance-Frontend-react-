@@ -1,0 +1,436 @@
+header {
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04));
+  height: 87px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.08) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 27px;
+  z-index: 1;
+  backdrop-filter: blur(38px);
+  // background: linear-gradient(0deg, #120510, #120510);
+
+  .bell {
+    margin: auto !important;
+    height: auto !important;
+  }
+    
+
+  .signup-banner {
+    background: var(--green);
+    color: var(--back-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    a,
+    a:hover {
+      color: var(--back-color);
+    }
+  }
+
+  .ui.container {
+    width: 100%;
+    @media #{$for-phone-only} {
+      width: 100% !important;
+      padding: 0;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    @media #{$for-tablet-portrait-up} {
+      max-width: 1200px !important;
+    }
+  }
+
+  .ui.menu:after {
+    display: none;
+    content: none;
+  }
+
+  .ui.inverted.secondary.menu {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between;
+    @media #{$for-tablet-landscape-down} {
+      justify-content: center;
+    }
+    div.item {
+      margin: 0;
+      padding: 0;
+    }
+
+    div.item.navigation {
+      width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+      a {
+        transition: color 0.3s;
+    margin: 0 0.33333rem;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-weight: 500!important;
+    font-size: 18px;
+        &:hover {
+          color: var(--green);
+        }
+      }
+    }
+
+    .greenButton {
+      padding: $padding/1.5;
+      border-radius: 50px;
+      i {
+        margin-right: 0.5rem;
+        @media #{$for-phone-only} {
+          margin: 0;
+        }
+      }
+      &:hover {
+        color: var(--background-dark) !important;
+        background-color: var(--green);
+      }
+    }
+    .green-bordered-button {
+      padding: $padding/1.5;
+      border-radius: 50px;
+      i {
+        margin-right: 0.5rem;
+        @media #{$for-phone-only} {
+          margin: 0;
+        }
+      }
+      &:hover {
+        color: var(--background-dark) !important;
+        background-color: var(--green);
+      }
+    }
+
+    div.item.profile {
+      .ui.toggle.checkbox {
+        margin: 0 $padding;
+        .box:before,
+        label:before {
+          background-color: var(--background-dark);
+          border: solid 2px;
+          border-color: (--text-color);
+        }
+        &.checked {
+          label::before {
+            background-color: var(--green) !important;
+          }
+        }
+        label {
+          color: var(--text-color);
+        }
+      }
+      .ui.toggle.checkbox label:after {
+        border: solid 2px;
+        border-color: var(--text-color) !important;
+      }
+      > div {
+        background-color: transparent;
+        display: flex;
+        .avatar-wrapper {
+          border: 1px solid var(--green);
+          width: $header-height * 0.7;
+          height: $header-height * 0.7;
+          border-radius: $header-height * 0.35;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          img {
+            margin: 1%;
+            width: 80%;
+            height: 80%;
+          }
+        }
+        .ui.button {
+          color: var(--text-color);
+          @media #{$for-phone-only} {
+            margin: $padding/3;
+          }
+        }
+        .ui.button i {
+          color: var(--text-color);
+          position: relative;
+          font-size: $padding * 1.3;
+          .ui.floating.label {
+            padding: 0.1 * $padding 0.2 * $padding;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: -$padding * 0.5;
+            bottom: -$padding * 0.5;
+            top: auto;
+            left: auto;
+          }
+        }
+      }
+    }
+    div.item.search {
+      flex: 0.8;
+      .search-input {
+        width: 25vw;
+        .ui.action.input {
+          width: 100%;
+        }
+        & input {
+          background: var(--page-back); // border: 1px solid gray;
+          transition: border 0.3s ease;
+          border-radius: 6px;
+          &:focus {
+            background: var(--page-back); // border: 1px solid white;
+            border-radius: 6px;
+            color: var(--text-color);
+          }
+        }
+        & .icon {
+          color: var(--text-secondary);
+        }
+        .ui.button {
+          border: none;
+          background: var(--back-color);
+          border: 1px solid transparent;
+          &:hover {
+            & .icon {
+              color: var(--header-back);
+            }
+          }
+        }
+      }
+    }
+    div.item.home {
+      color: var(--text-color);
+      display: flex;
+      justify-content: space-between;
+      a.logo {
+        width: auto;
+        > .ui.image {
+          width: 60%;
+        }
+      }
+    }
+    .ui.button,
+    .ui.button:hover {
+      padding: 0;
+      background-color: transparent;
+      color: var(--page-back);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.38;
+      // padding: 0 $padding/2;
+      margin: 0 0 0 24px;
+      i {
+        margin: 0;
+      }
+    }
+
+    .ui.button.login {
+      color: #4dd4b6;
+      &:hover {
+        color: darken(#4dd4b6, 10);
+      }
+    }
+
+    .ui.button.register-button {
+      color: var(--back-color);
+      padding: 10px 30px;
+      border-radius: 4px;
+      background-color: #4dd4b6;
+
+      &:hover {
+        background-color: darken(#4dd4b6, 10);
+      }
+    }
+  }
+  .left_menu_toggle i {
+    font-size: 34px !important;
+    color: var(--text-color) !important;
+    margin: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .left_menu_toggle i {
+    font-size: 34px !important;
+    color: var(--text-color) !important;
+  }
+  .mobile-toggle i {
+    font-size: 34px !important;
+    color: var(--text-color) !important;
+    z-index: 99999;
+  }
+  .app .ui.vertical.custom-mobile-menu.menu {
+    height: 100vh !important;
+    width: 100% !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-right: 2.8rem !important;
+    z-index: 9999;
+  }
+  .app .ui.vertical.custom-mobile-menu.menu {
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-shadow: none;
+    padding: 68px 15px 15px 60px;
+    background-color: var(--page-back) !important;
+  }
+  .app .ui.vertical.custom-mobile-menu.menu .item a.active {
+    opacity: 1;
+    color: #29cdfb !important;
+  }
+  .custom-mobile-menu a {
+    color: var(--text-color) !important;
+    font-size: 14px !important;
+    line-height: 2rem !important;
+    font-weight: 800 !important;
+  }
+  .ui.secondary.inverted.menu .link.item,
+  .ui.secondary.inverted.menu a.item {
+    color: var(--text-color) !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .signup-banner a {
+    font-size: 10px;
+  }
+  header {
+    padding: 10px;
+    .ui.container {
+      width: 100%;
+    }
+    .ui.inverted.secondary.menu {
+      .ui.button,
+      .ui.button:hover {
+        font-size: 12px;
+      }
+
+      div.item.navigation {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+/*semantic ui style override*/
+@media only screen and (max-width: 767px) {
+  .ui.container {
+    width: 100% !important;
+  }
+}
+
+
+
+// ====================   My CSS  =================
+
+#mainNav {
+  padding: 0;
+  backdrop-filter: blur(38px);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04));
+  z-index: 9999999;
+}
+#mainNav .navbar-brand {
+  font-family: 'Lexend', sans-serif;
+}
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:active {
+  color: #2937f0;
+}
+#mainNav .navbar-toggler {
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+  color:#fff;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color:red;
+}
+.cztoggle-menu-mobile{ display: none; cursor: pointer;}
+.cztoggle-menu-web{ display: block;}
+.combinedBtn {
+  .btn.headerBtn{
+    background: linear-gradient(90.24deg, #FA2CAB -1.6%, #9B69FC 99.79%), #FA2CAB;
+    border-radius: 5px !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    width: 100px;
+    height: 35px;
+    padding: 5px 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border: 0;
+    &--login {
+      background: none !important;
+      color: #fff !important;
+    }
+  }   
+  header .combinedBtn button.btn.headerBtn {
+    width: 90px;
+    height: 36px;
+  }
+}
+.darkHeader{background: linear-gradient(0deg, #120510, #120510)!important;}
+.mr-auto {
+  margin-right: auto;
+}
+
+.combinedBtn{
+  display: flex;
+  gap: 10px;
+  margin-right: 60px;
+}
+.ui.grid.user-online img {
+  width: 70px;
+  border-radius: 43px;
+  padding: 10px;
+}
+@media only screen and (max-width: 1024px) {
+.cztoggle-menu-mobile{ display: block;}
+.cztoggle-menu-web{ display: none; cursor: pointer;}
+div#navbarResponsive{ display: none !important;}
+  .ui.four.column.grid.categories.cz-categories .row>.column {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.categories.cz-categories a .categories_bg__active h3.ui.header {
+    padding: 20px 0;
+}
+
+.categories.cz-categories > .cat-cz-both .categories.categories__mt .row>.column {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.cat-cz-both .categories.categories__mb .row .ui.secondary.segment.categories_bg {
+    margin: 0 !important;
+}
+}

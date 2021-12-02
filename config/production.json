@@ -1,0 +1,9 @@
+{
+  "mongodb_url": "mongodb://trybePresaleUser:5yU3FO1oXGr8@127.0.0.1/trybePresale",
+  "snapshot_blocknum": "29761804",
+  "token": "eyJhbGciOiJLTVNFUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDYzOTc1ODQsImp0aSI6ImY0OGY2NWUxLTBkODAtNDk0NS1iMDgxLTZlYzBkOTgzYmQwNyIsImlhdCI6MTU0MzgwNTU4NCwiaXNzIjoiZGZ1c2UuaW8iLCJzdWIiOiJDaVFBNmNieWUzWStMRGlCejJ0QkhualhJWUZKWFJYZ1IrZlQ0VHpGaUI1NUZCVE1admtTUGdBL0NMUnRlUU0xR2F1dkFzSXJjeFlOVi9EUFNoYjUzNmVEOExLYm9STHVyWnMyQWVHOEkzM0EzNXU1MmNqTVc1TWM0YmMwMXBMSjJlclRJVjJNIiwidGllciI6ImJldGEtdjEiLCJ2IjoxfQ.byZ4qDmulgT1dJqbNIixRVV1oZicWl0LqrHO4N1-QgSltMbiRqSS4hVPB9WbGFw3uKheu0OFYlpvieJGdrzI0g",
+  "redis": {
+    "domain": "80.240.28.56",
+    "auth": "twqUGgcQkfOOGP82hpDsith71K5mK1t6h3av8Xi36jDI7XwTC1XzDJUmw9QeZqH26AyQiRVPfdq2AkMLrnwGdfHxbK5luYZGXmfs"
+  }
+}

@@ -1,0 +1,193 @@
+/* ====   CHATS INSIDE THE SIDEBAR  ===== */
+
+.ui.inverted.segment.sidebar-chat-summary {
+  padding: 0;
+  
+  .ui.segment.section-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--message-summary-header)!important;
+    i{
+      color:var(--my-message);
+      font-size: 1.5rem;
+    }
+  }
+}
+/* === CHANNEL LIST COMPONENT STYLES === */
+.channel-list-wrapper{
+  overflow-y: scroll;
+  padding-bottom: 10vh;
+  width: 22%;
+  .event.channel-wrapper{
+    height: 6rem;
+    padding: 0 $padding/2;
+    overflow-y: hidden;
+    .ui.feed>.event>.content .summary, div.summary{
+      color: var(--icon-light)!important;
+      font-size: $padding*0.8!important;
+    }
+    .text.extra{
+      margin: 0;
+      color: var(--icon-secondary);
+      font-size: $padding*0.9!important;
+    }
+    .label{
+      width: 18%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      //flex-shrink: 0;
+      //flex-grow: 0;
+      .chat-image{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-position: center;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-color: var(--text-color);
+      }
+    }
+    
+  }
+  .channel-wrapper:hover{
+    background-color: var(--page-back);
+    cursor: pointer;
+  }
+  .channel-wrapper.active{
+    background-color: var(--my-message);
+  }
+  .ui.button.load-more-chats{
+    color: var(--icon-light);
+    background-color: var(--back-color);
+    width: 100%;
+  }
+}
+  
+/* === CHAT COMPONENT ==== */
+.chat-wrapper{
+  height: 100%;
+  background-color: var(--back-color);
+  width: 100%;
+  display: flex;
+  .ui.feed.channel-list-wrapper{
+    margin-bottom: 0;
+  }
+
+  .str-chat.str-chat-channel.messaging.light {
+    width: 78%;
+    @media #{$for-tablet-landscape-down} {
+      width: 100%;
+    }
+  }
+
+  // placeholder if there's no channels
+  .ui.center.aligned.container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .str-chat {
+    height: 100%;
+    width: 100%;
+  }
+
+  .str-chat__square-button.str-chat__header-livestream-right-button--info {
+    display: none;
+  }
+  
+  .str-chat.str-chat-channel.messaging.light .str-chat__header-livestream {
+    color: rgb(25,25,25);
+  }
+
+  //channel list
+  /*.str-chat.str-chat-channel-list.messaging{
+    .str-chat__channel-list-team__header{
+      .str-chat__channel-list-team__header--title{
+        color: var(--icon-light);
+      }
+    }
+    .str-chat__channel-preview {
+      .str-chat__channel-preview-title{
+        color: var(--icon-light);
+      }
+      .str-chat__channel-preview-last-message{
+        color: var(--icon-secondary);
+      }
+    }
+    .str-chat__channel-preview.str-chat__channel-preview--active{
+      background-color: var(--my-message);
+    }
+  }
+  //chat window
+  .str-chat.str-chat-channel.messaging{
+    width:100%;
+    //padding-bottom: 7vh;
+    .str-chat__container{
+      margin: 0;
+      .str-chat__main-panel{
+        padding: 0;
+        
+        //chat-header
+        .str-chat__header-livestream{
+          border-radius: 0;
+          background-color: var(--page-back);
+        }
+        //messages-field
+        .str-chat__list{
+          background-color: var(--header-back);
+          .str-chat__date-separator-date{
+            color: var(--icon-light);
+          }
+          .str-chat__message-timestamp{
+            color: var(--icon-secondary);
+          }
+          .str-chat__message{
+            .str-chat__message-simple-status{
+              svg path{
+                fill: var(--my-message);
+              }
+            }
+          }
+        }
+        //form for new message
+        .str-chat__input{
+          background-color: var(--page-back);
+          color: var(--icon-light);
+          .rta.str-chat__textarea{
+            textarea{
+              background-color: var(--page-back);
+              color: var(--icon-light);
+            }
+          }
+          .str-chat__input-emojiselect, .rfu-file-upload-button{
+            svg path{
+              fill: var(--icon-light);
+            }
+          }
+        }
+      }
+      .str-chat__main-panel>div:last-child .str-chat__input-footer{
+        background-color: var(--page-back);
+      }
+    }
+  }
+
+  .str-chat.messaging{
+    background-color: var(--back-color);
+    color: var(--icon-light);
+
+    .str-chat-channel{
+      max-height: 80vh;
+    }
+
+
+
+    
+  }*/
+}
+
+.chat-wrapper + .footer-wrapper { 
+  display: none;
+}

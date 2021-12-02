@@ -1,0 +1,14 @@
+{
+  "name": "trybe-web-app",
+  "version": 2,
+  "alias": "trybe",
+  "type": "static",
+  "static": {
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+.info-block-item {
+  padding: 36px 24px !important;
+  flex-flow: column wrap !important;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-block-icon {
+  margin: 0 auto 12px;
+}
+
+.info-block-wrapper {
+  text-align: center;
+}
+.icon-block-amount-text {
+  color: var(--text-color);
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+
+  &.power-up__rank {
+    font-size: 24px;
+  }
+}
+.icon-block-amount-name {
+  opacity: 0.6;
+  color: var(--text-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+

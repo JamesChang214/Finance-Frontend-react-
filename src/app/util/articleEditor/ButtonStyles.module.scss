@@ -1,0 +1,34 @@
+.buttonWrapper {
+  display: inline-block;
+}
+
+.button {
+  background: rgb(48, 48, 60);
+  color: #939399;
+  font-size: 18px;
+  border: 0;
+  padding-top: 5px;
+  vertical-align: bottom;
+  height: 34px;
+  width: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button svg {
+  fill: #939399;
+}
+
+.button:hover,
+.button:focus {
+  background: rgb(26, 26, 36);
+  outline: 0;
+}
+
+.active {
+  color: #4DD4B6;
+}
+
+.active svg {
+  fill: #4DD4B6;
+}

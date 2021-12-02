@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>light/arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.77921875,2.56831051 L8.57206054,2.77543942 C8.43477539,2.91272458 8.43477539,3.13532224 8.57206054,3.27263669 L13.801377,8.50195312 L2.78906247,8.50195312 C2.59491208,8.50195312 2.43749997,8.65936523 2.43749997,8.85351562 L2.43749997,9.14648438 C2.43749997,9.34063477 2.59491208,9.49804688 2.78906247,9.49804688 L13.801377,9.49804688 L8.57206054,14.7273633 C8.43477539,14.8646485 8.43477539,15.0872461 8.57206054,15.2245606 L8.77921875,15.4316895 C8.91650391,15.5689746 9.13910156,15.5689746 9.27638672,15.4316895 L15.4595215,9.24858399 C15.5968067,9.11129883 15.5968067,8.88870117 15.4595215,8.75138672 L9.27638672,2.56831051 C9.13910156,2.43099606 8.91650391,2.43099606 8.77921875,2.56831051 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-SEO" transform="translate(-268.000000, -2432.000000)">
+            <g id="Group-28-Copy-2" transform="translate(135.000000, 1926.000000)">
+                <g id="Stacked-Group" transform="translate(0.000000, 504.000000)">
+                    <g id="light/arrow-right" transform="translate(131.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="arrow-right"></g>
+                        <g id="color/green" mask="url(#mask-2)" fill="#4DD4B6" fill-rule="nonzero">
+                            <rect id="Rectangle" x="0" y="0" width="18" height="18"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

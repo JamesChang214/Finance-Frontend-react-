@@ -1,0 +1,43 @@
+form.ui.inverted.form {
+  .field {
+    textarea {
+      background-color: transparent;
+      border: 1px solid var(--title-dark);
+      overflow: hidden;
+      resize: none;
+      display: block;
+      border-radius: 6px;
+      color: var(--text-color);
+    }
+  }
+  .buttons {
+    display: flex;
+    /* div.ui.fluid.buttons:first-child {
+      .field {
+        padding-right: 0.5rem;
+        .ui.button {
+          background-color: rgb(44, 44, 56);
+          border-radius: 2rem;
+          color: var(--title-dark);
+          &:hover {
+            color: var(--green);
+          }
+        }
+      }
+    } */
+    div.ui.fluid.buttons {
+      justify-content: flex-end;
+      .ui.button {
+        border: 2px solid var(--green);
+        color: var(--green);
+        background-color: transparent;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        &:hover {
+          background: var(--green);
+          color: var(--background-dark);
+        }
+      }
+    }
+  }
+}

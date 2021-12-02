@@ -1,0 +1,27 @@
+
+.event{
+  padding: 20px !important;
+  margin: 10px !important;
+  background: #131313 !important;
+  color: #fff !important;
+  border-radius: 5px;
+  .label{
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+  }
+  .content{
+    color: #fff !important;
+    .summary{
+      color: #fff !important;
+      font-weight: 400;
+      .user{
+        color: var(--pink) !important;
+      }
+      .date{
+        color: var(--pink) !important;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

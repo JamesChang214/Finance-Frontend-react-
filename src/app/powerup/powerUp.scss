@@ -1,0 +1,86 @@
+@import "components/InfoBlock/InfoBlock";
+@import "components/powerUpButton/PowerUpButton";
+
+.tr-power-up {
+  &__header {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    justify-content: center;
+
+    .tr-block-title {
+      margin-bottom: 0;
+    }
+  }
+  .icon-wrapper {
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border-radius: 13px;
+    justify-content: center;
+    .icon {
+      font-size: 16px;
+    }
+    .icon-balance {
+      color: rgb(167, 198, 49);
+    }
+    .icon-trophy {
+      color: rgb(200, 38, 92);
+    }
+    .icon-piggy {
+      color: rgb(31, 185, 232);
+    }
+  }
+  .icon-balance-wrapper {
+    background-color: rgb(53, 60, 33);
+  }
+  .icon-trophy-wrapper {
+    background-color: rgb(60, 25, 42);
+  }
+  .icon-piggy-wrapper {
+    background-color: rgb(23, 53, 68);
+  }
+  &__info-block-container {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+  &__rank {
+    font-size: 2rem !important;
+  }
+
+  &.airdrop-container {
+    .tr-rounded-box {
+      min-height: 0;
+      margin-bottom: 24px;
+    }
+
+    .staking-table {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+
+  table {
+    .table-icon-padding {
+      margin-right: 5px;
+    }
+    .tokens-required-cell {
+      color: rgb(31, 185, 232);
+    }
+    .voting-articles-cell {
+      color: rgb(163, 109, 49);
+    }
+    .bonus-rewards-cell {
+      color: rgb(176, 202, 69);
+    }
+    .articles-cell {
+      display: inline-block;
+      width: 78%;
+      text-align: center;
+    }
+  }
+}

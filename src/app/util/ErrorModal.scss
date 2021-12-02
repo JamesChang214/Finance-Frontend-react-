@@ -1,0 +1,48 @@
+.ui.modal {
+  top: 30%;
+  border-radius: 0.5rem;
+}
+
+.ui.modal>.header {
+  background: var(--header-back);
+  color: var(--green);
+}
+
+.ui.modal>.content {
+  background: var(--header-back);
+  color: var(--green);
+  .input-label {
+    color: var(--text-color);
+    font-weight: normal;
+  }
+  .copy-logs-input {
+    color: var(--text-color);
+    background: transparent;
+    border: 1px solid var(--text-secondary);
+  }
+  .copy-logs-input:focus {
+    color: var(--text-color);
+    background: transparent;
+    border: 1px solid var(--text-color);
+  }
+}
+
+.ui.modal>.actions {
+  background: var(--header-back);
+  .cancel-button {
+    background: transparent;
+    color: var(--text-color);
+  }
+  .cancel-button:hover {
+    color: var(--green);
+  }
+  .submit-button {
+    background: transparent;
+    border: 1px solid var(--green);
+    color: var(--green);
+  }
+  .submit-button:hover {
+    color: var(--header-back);
+    background: var(--green);
+  }
+}

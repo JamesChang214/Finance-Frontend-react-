@@ -1,0 +1,348 @@
+.staking-header {
+  width: 90%;
+  font-weight: 600;
+  margin: auto;
+}
+
+.staking-instructions-box {
+  border-radius: 5px;
+  background: var(--page-back);
+  width:90%;
+  margin:30px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:40px; 
+  padding-bottom:30px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+  font-weight: bolder;
+}
+
+.tr-stake {
+  p {
+    color: var(--green);
+    font-size: 28px;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+
+    span {
+      font-size: 72px;
+      margin-right: 8px;
+      font-weight: bold;
+      letter-spacing: 0.2px;
+      display: inline-block;
+    }
+  }
+
+  &--yellow {
+    p {
+      color: var(--yellow);
+    }
+  }
+}
+.staking-table.cz-staking-table {
+  width: 100%;
+  padding: 0 60px;
+  margin: 0;
+}
+
+.staking-table.cz-staking-table table.ui.table {
+  background: #1b1b1b;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.staking-table.cz-staking-table table.ui.table thead tr {background: #1b1b1b;}
+
+.staking-table.cz-staking-table table.ui.table tr td {
+  background: #1b1b1b;
+  border-radius: 0;
+  border: none;
+  color: white;
+  font-weight: normal;
+  padding: 8px 20px;
+  vertical-align: middle;
+}
+
+.staking-table.cz-staking-table table.ui.table thead tr td {color: #bdbdbd;}
+
+.staking-table.cz-staking-table table.ui.table thead tr td {
+  background: none;
+}
+
+.staking-table.cz-staking-table table.ui.table tbody tr:nth-child(odd) td {
+  background: #131313;
+}
+
+.staking-table.cz-staking-table table.ui.table tr td button {
+  background: #2d2d2d;
+  color: #c83e93;
+  cursor: pointer;
+}
+.staking-table.cz-staking-table table + button {
+  background: transparent;
+  border-color: #01CDFD;
+  color: #01CDFD;
+  width: 250px;
+  margin: 30px auto 0;
+  display: block;
+}
+.airdrop-container.cz-staking {
+  margin-top: 83px;
+  padding-bottom:0;
+}
+
+.airdrop-container.cz-staking h2.tr-block-title {
+  color: white;
+}
+
+.airdrop-container.cz-staking .ui.large.warning.message {
+  background: #1b1b1b;
+  box-shadow: none !important;
+}
+
+.airdrop-container.cz-staking .header {
+  color: white !important;
+  font-weight: normal;
+}
+
+.airdrop-container.cz-staking .ui.large.warning.message p {
+  color: #dedede;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.airdrop-container.cz-staking .ui.stackable.one.column.grid.tr-stake-wrapper p {
+  background: #1b1b1b;
+    border-radius: 4px;
+    padding: 25px;
+    color: #dedede;
+    font-size: 12px;
+    font-weight: normal;
+}
+.airdrop-container {
+  .ui.grid.tr-stake-wrapper {
+    margin: 0 -12px !important;
+
+    p {
+      margin-bottom: 14px;
+    }
+
+    .column {
+      padding: 0 12px !important;
+    }
+
+    .tr-rounded-box {
+      padding: 24px;
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+
+  .staking-button {
+    cursor: pointer;
+    width: 100%;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 14px;
+    background-color: var(--back-box-color);
+    text-transform: uppercase;
+    border: 1px solid var(--green);
+    min-width: 64px;
+    line-height: 42px;
+    padding: 0 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    margin-top: auto;
+    align-self: flex-start;
+
+    &:hover {
+      color: var(--back-box-color);
+      background-color: var(--green);
+    }
+
+    &--yellow {
+      color: var(--back-box-color);
+      background-color: var(--yellow);
+      border-color: var(--yellow);
+
+      &:hover {
+        color: var(--yellow);
+        background-color: var(--back-box-color);
+      }
+    }
+  }
+}
+
+.staking-table {
+  width: 90%;
+  margin: 20px auto;
+
+  .refund-button {
+    cursor: pointer;
+    width: 100%;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 14px;
+    background-color: var(--back-box-color);
+    text-transform: uppercase;
+    border: 1px solid var(--green);
+    min-width: 64px;
+    line-height: 42px;
+    padding: 0 16px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+
+    &:hover {
+      color: var(--back-box-color);
+      background-color: var(--green);
+    }
+
+    &--red {
+      color: var(--red);
+      border-color: var(--red);
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--red);
+      }
+    }
+  }
+
+  .ui.table {
+    border: 0;
+    border-collapse:separate;
+    border-spacing: 0 8px;
+    background-color: transparent;
+    color: var(--text-color);
+
+    thead {
+      tr {
+        background-color: var(--message-summary-header);
+
+        td {
+          font-size: 14px;
+          font-weight: bold;
+          padding: 16px 10px;
+          // border-bottom: 8px solid var(--message-summary-header);
+          background-color: var(--back-box-color);
+
+          &:last-child {
+            padding: 16px 24px 16px 10px;
+            border-radius: 0 8px 8px 0;
+          }
+
+          &:first-child {
+            padding: 16px 10px 16px 24px;
+            border-radius: 8px 0 0 8px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 20px 10px;
+          line-height: 1.29;
+          background-color: var(--back-box-light-color);
+
+          &:last-child {
+            border-radius: 0 8px 8px 0;
+            padding: 20px 24px 20px 10px;
+          }
+
+          &:first-child {
+            padding: 20px 10px 20px 24px;
+            border-radius: 8px 0 0 8px;
+          }
+        }
+      }
+    }
+
+    .unstaking-button {
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-color);
+      margin-right: 0;
+      line-height: 1.5;
+      background-color: var(--my-message);
+    }
+  }
+}
+.staking-table.cz-staking-table-mobile.cz-staking-table {
+  background: #1b1b1b;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  border-radius: 6px;
+  padding: 10px 0 0;
+  //display: none;
+}
+
+.staking-table.cz-staking-table-mobile.cz-staking-table .ui.grid {
+  margin: 0;
+  padding: 8px 20px;
+}
+
+.staking-table.cz-staking-table-mobile.cz-staking-table .ui.grid .ui.grid {
+  width: 33.33%;
+  color: #999;
+  font-size: 10px;
+  padding: 4px 0;
+}
+
+.staking-table.cz-staking-table-mobile.cz-staking-table .ui.grid .ui.grid p {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 0;
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+}
+.staking-table.cz-staking-table-mobile.cz-staking-table>.ui.grid:nth-child(even) {
+  background: #131313;
+}
+.staking-table.cz-staking-table-mobile.cz-staking-table .ui.grid .ui.grid button.ui.button {
+  padding: 5px 10px;
+  background: #2d2d2d;
+  color: #c83e93;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.staking-table.cz-staking-table-mobile.cz-staking-table .button.refund-button {
+  width: 250px;
+  margin: 10px auto 10px;
+  display: block;
+  border-color: #01CDFD;
+  color: #01CDFD;
+  clear: both;
+}
+@media screen and (max-width: 1024px) {
+  .staking-table .ui.table thead tr td,
+  .staking-table .ui.table tbody tr td {
+    padding: 10px !important;
+  }
+  .staking-table.cz-staking-table-mobile.cz-staking-table { display: block;}
+  .staking-table.cz-staking-table {
+    //display: none;
+}
+}
+@media screen and (max-width: 450px) {
+  .staking-table.cz-staking-table-mobile.cz-staking-table .ui.grid .ui.grid {
+    width: calc(100% - 174px);
+}
+.staking-table.cz-staking-table-mobile.cz-staking-table .ui.grid .ui.grid:nth-child(1), .staking-table.cz-staking-table-mobile.cz-staking-table .ui.grid .ui.grid:nth-child(4) {
+  width: 85px;
+}
+
+.staking-table.cz-staking-table-mobile.cz-staking-table .ui.grid .ui.grid:nth-child(3), .staking-table.cz-staking-table-mobile.cz-staking-table .ui.grid .ui.grid:nth-child(6) {width: 89px;}
+}

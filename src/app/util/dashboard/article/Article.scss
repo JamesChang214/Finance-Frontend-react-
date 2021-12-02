@@ -1,0 +1,42 @@
+$padding: 1rem;
+$margin: 1rem;
+
+.article {
+  font-size: 16px;
+  margin: 0 6vw;
+  padding-top: 0;
+  .post-description {
+    background-color: transparent;
+    color: var(--icon-secondary);
+    margin-bottom: $margin/2;
+  }
+  .ui.form textarea {
+    background-color: white;
+    border: 1px solid var(--icon-secondary);
+    padding: $padding/2;
+  }
+  .ui.form textarea:focus {
+    border: 1px solid var(--icon-light);
+    background-color: transparent;
+  }
+  
+  .text-area-title {
+    color: var(--green) !important;
+    font-size: 26px !important;
+    font-weight: bold !important;
+    margin-bottom: $margin*2 !important;
+  }
+  .text-area-title:focus {
+    color: var(--green);
+  }
+  .text-area-story {
+    color: var(--icon-light) !important;
+    font-size: 16px !important;
+    text-align: justify !important;
+    font-weight: normal !important;
+
+  }
+  .text-area-story:focus {
+    color: var(--icon-light);
+  }
+}
